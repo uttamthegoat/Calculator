@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="intro">
+            <h1>Simple Calculator</h1>
+        </div>
+        <div class="theme">
+            <!-- <img src="botaniz_uttam.jpeg" alt="dark"> -->
+            <div class="toggle-btn" id="btn">
+                <span id="btnText">Light</span>
+                <img src="Calculator_theme_sun.png" alt="Moon" id="btnIcon">
+            </div>
+        </div>
+        <div class="Calculator">
+            <div>
+                <div class="display">
+                    <input type="text" name="display" id="result">
+                </div>
+                <div class="numbers">
+                    <button>AC</button>
+                    <button>DE</button>
+                    <button>.</button>
+                    <button>/</button>
+                </div>
+                <div class="numbers">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>*</button>
+                </div>
+                <div class="numbers">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+                </div>
+                <div class="numbers">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>+</button>
+                </div>
+                <div class="numbers">
+                    <button>00</button>
+                    <button>0</button>
+                    <button id="equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script src="theme.js"></script>
+    <script src="app.js"></script>
+    <!-- <script>
+
+        let btn=document.getElementById("btn");
+        let btnText=document.getElementById("btnText");
+        let btnIcon=document.getElementById("btnIcon");
+
+        btn.= function(){
+            document.body.classList.toggle("dark-theme");
+
+            if(document.body.classList.contains("dark-theme")){
+                btnText.innerHTML="Dark";
+                btnIcon.src="Calculator_theme_dark.png";
+            }
+            else{
+                btnText.innerHTML="Light";
+                btnIcon.src="Calculator_theme_sun.png";
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
